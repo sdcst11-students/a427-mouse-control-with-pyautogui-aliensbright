@@ -1,5 +1,5 @@
 #!python3
-import py
+import pyautogui
 import pyautogui
 import time
 """

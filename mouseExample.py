@@ -1,5 +1,6 @@
 #! python3
-import pyautogui, sys
+import pyautogui
+import sys
 print('Press Ctrl-C to quit.')
 try:
     while True:
