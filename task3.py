@@ -1,6 +1,4 @@
 import pyautogui
-import sys
-import 
 
 '''
 Exit full screen (restore down).  Open the file square.webp in a side window (right click on it).
@@ -16,7 +14,7 @@ Extension:
 Store the coordinates for your moves in a list, and iterate through the list with a for loop to move to each one of the locations one at a time! Your code will look a lot smaller although your variables will be a lot bigger.
 '''
 def movement():
-    img=
+    
     startpoint=pyautogui.locateOnScreen('Start_Point_Maze.png',region=(0,800,100,100), confidence=0.9)
     print(startpoint)
 movement()
