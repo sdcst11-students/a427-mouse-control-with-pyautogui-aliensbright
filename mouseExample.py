@@ -10,4 +10,8 @@ try:
         print('\b' * len(positionStr), end='', flush=True)
 except KeyboardInterrupt:
     print('\n')
-    
+'''
+X: 1296 Y:  204
+
+X: 100 Y:  100
+'''
