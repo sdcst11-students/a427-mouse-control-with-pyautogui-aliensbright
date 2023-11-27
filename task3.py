@@ -18,7 +18,7 @@ Store the coordinates for your moves in a list, and iterate through the list wit
 def movement():
     while True:
         try:
-            coords=pyautogui.locateCenterOnScreen('assets/StartPoint.png', confidence=0.1)
+            coords=pyautogui.locateCenterOnScreen('assets\StartPoint.png', confidence=0.1)
             print(coords)
             pyautogui.moveTo(coords)
         except:
