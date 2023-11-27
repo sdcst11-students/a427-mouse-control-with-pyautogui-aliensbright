@@ -1,5 +1,6 @@
 #!python3
 import pyautogui
+import time
 
 '''
 Exit full screen (restore down).  Open the file square.webp in a side window (right click on it).
@@ -15,7 +16,12 @@ Extension:
 Store the coordinates for your moves in a list, and iterate through the list with a for loop to move to each one of the locations one at a time! Your code will look a lot smaller although your variables will be a lot bigger.
 '''
 def movement():
-    coords=pyautogui.locateCenterOnScreen('assets/StartPoint.png',region=(1296,204,100,100), confidence=0.9)
-    print(coords)
-    pyautogui.moveTo(coords)
+    while True:
+        try:
+            coords=pyautogui.locateCenterOnScreen('assets/StartPoint.png', confidence=0.1)
+            print(coords)
+            pyautogui.moveTo(coords)
+        except:
+            print('this isnt working')
+            input('x')
 movement()
