@@ -17,25 +17,14 @@ Store the coordinates for your moves in a list, and iterate through the list wit
 '''
 
 def getStartPoint():
-    '''
-    x=1
     while True:
-        try:
-            pyautogui.moveTo(1318,200)
-            coords=pyautogui.locateCenterOnScreen('assets/StartPoint123.png', confidence=x)
-            print(coords)
-            pyautogui.moveTo(coords)
-            input('x')
-        except:
-            print('this isnt working')
-            x=x-0.05
-            input('x')
-'''
-    input('go to the start spot')
-    return pyautogui.position()
+            coords=pyautogui.locateCenterOnScreen('assets/Arrow.png', confidence=.554)
+            coords=[coords[0]+4,(coords[1]-10)]
+            return coords
+
 
 x,y=getStartPoint()
-a=28  #allows user to change the width of the maze
+a=22  #allows user to change the width of the maze
 CoordsList=([x,y,0],[x+3*a,y,3],[x+3*a,y+3*a,3],[x+2*a,y+3*a,1],[x+2*a,y+7*a,4],[x+4*a,y+7*a,2],[x+4*a,y+6*a,1],[x+3*a,y+6*a,1],[x+3*a,y+4*a,2],[x+5*a,y+4*a,2],[x+5*a,y+2*a,2],[x+7*a,y+2*a,2],[x+7*a,y+1*a,1],[x+9*a,y+1*a,2],[x+9*a,y+3*a,2],[x+7*a,y+3*a,2],[x+7*a,y+6*a,3],[x+6*a,y+6*a,1],[x+6*a,y+9*a,3],[x+8*a,y+9*a,2],[x+8*a,y+8*a,1],[x+12*a,y+8*a,4])
 
 for i in CoordsList:
